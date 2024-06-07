@@ -1,0 +1,30 @@
+mkdir practice && cd practice
+touch file1.txt file2.txt file3.txt file4.txt file5.txt
+echo -e "this is file1 \nCheese" file1.txt
+echo -e "this is file2 \nPepperoni" file2.txt
+echo -e "this is file3 \nSausage" file3.txt
+echo -e "this is file4 \nPeppers" file4.txt
+echo -e "this is file5 \nMushroom" file5.txt
+cat file1.txt file2.txt file3.txt file4.txt file5.txt
+mkdir subdir
+mv file1.txt subdir
+cp file2.txt subdir
+mv file3.txt new_file3.txt
+rm file4.txt
+wc -l file5.txt
+cat file1.txt file2.txt >> combined.txt
+grep Mushroom file5.txt
+sort file2.txt
+wc -w file3.txt
+echo "pineapple" >> file3.txt
+sed -i 's/Peppers/Chili/g' file4.txt
+tail file5.txt
+sed -n 1,10p file1.txt
+cat file2.txt file3.txt >> combined2.txt
+wc -c file1.txt
+rm -rf subdir/
+chmod 604 file5.txt
+pwd
+ls -a
+date
+lscpu
